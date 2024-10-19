@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2024 at 09:37 AM
+-- Generation Time: Oct 19, 2024 at 12:54 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ss`
+-- Database: `sublinker services`
 --
 
 -- --------------------------------------------------------
@@ -157,7 +157,8 @@ CREATE TABLE `sellers` (
   `business_phone` varchar(15) DEFAULT NULL,
   `verification_status` enum('pending','verified','rejected') DEFAULT NULL,
   `store_description` text DEFAULT NULL,
-  `store_logo` varchar(255) DEFAULT NULL
+  `store_logo` varchar(255) DEFAULT NULL,
+  `CNIC` varchar(13) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -170,11 +171,9 @@ CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
   `email` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `user_type` enum('freelancer','buyer','admin') NOT NULL,
   `profile_picture` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `salt` varchar(255) NOT NULL,
-  `NIC` varchar(20) NOT NULL,
   `phone_number` varchar(15) NOT NULL,
   `fullName` varchar(255) DEFAULT NULL,
   `usertype` enum('seller','buyer') NOT NULL
