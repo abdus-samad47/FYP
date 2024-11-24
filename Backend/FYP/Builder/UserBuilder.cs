@@ -9,26 +9,26 @@ namespace FYP.Builder
         {
             var builder = modelBuilder.Entity<User>();
             builder.ToTable("Users");
-            builder.HasKey(u => u.Id);
-            builder.Property(u => u.Id).HasColumnName("User_Id").IsRequired().ValueGeneratedOnAdd();
-            builder.Property(u => u.Username).HasColumnName("User_name").IsRequired().HasMaxLength(50).IsUnicode(true);
-            builder.Property(u => u.Email).HasColumnName("User_Email").IsRequired().HasMaxLength(100).IsUnicode(true);
-            builder.Property(u => u.PasswordHash).HasColumnName("User_Password").IsRequired().HasMaxLength(255).IsUnicode(false);
-            builder.Property(u => u.Salt).HasColumnName("User.Salt").IsRequired().HasMaxLength(255).IsUnicode(false);
-            builder.Property(u => u.Role).HasColumnName("User.Role").IsRequired().HasMaxLength(20).IsUnicode(true);
-            builder.Property(u => u.CreatedAt).HasColumnName("User_CreatedAt").IsRequired().HasDefaultValueSql("GETDATE()");
-            builder.Property(u => u.UpdatedAt).HasColumnName("User_UpdatedAt").IsRequired(false);
-            builder.Property(u => u.DeletedAt).HasColumnName("User_DeletedAt").IsRequired(false);
-            builder.Property(u => u.Nic).HasColumnName("User.NIC").IsRequired().HasMaxLength(13).IsUnicode(true);
-            builder.Property(u => u.Phonenumber).HasColumnName("User_PhoneNumber").IsRequired().HasMaxLength(20).IsUnicode(true);
-            builder.Property(u => u.Address).HasColumnName("User_Address").IsRequired().HasMaxLength(255).IsUnicode(true);
-            builder.Property(u => u.Status).HasColumnName("User_Status").IsRequired().HasMaxLength(10).HasDefaultValue("Offline").IsUnicode(true);
+            builder.HasKey(u => u.user_id);
+            builder.Property(u => u.user_id).HasColumnName("user_id").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(u => u.username).HasColumnName("user_name").IsRequired().HasMaxLength(50).IsUnicode(true);
+            builder.Property(u => u.email).HasColumnName("user_email").IsRequired().HasMaxLength(100).IsUnicode(true);
+            builder.Property(u => u.password).HasColumnName("user_password").IsRequired().HasMaxLength(255).IsUnicode(false);
+            builder.Property(u => u.salt).HasColumnName("user_salt").IsRequired().HasMaxLength(255).IsUnicode(false);
+            builder.Property(u => u.role).HasColumnName("user_role").IsRequired().HasMaxLength(20).IsUnicode(true);
+            builder.Property(u => u.created_at).HasColumnName("user_created_at").IsRequired().HasDefaultValueSql("GETDATE()");
+            builder.Property(u => u.updated_at).HasColumnName("user_updated_at").IsRequired(false);
+            builder.Property(u => u.deleted_at).HasColumnName("user_deleted_at").IsRequired(false);
+            builder.Property(u => u.nic).HasColumnName("user_nic").IsRequired().HasMaxLength(13).IsUnicode(true);
+            builder.Property(u => u.phone_number).HasColumnName("user_phone_number").IsRequired().HasMaxLength(20).IsUnicode(true);
+            builder.Property(u => u.address).HasColumnName("user_address").IsRequired().HasMaxLength(255).IsUnicode(true);
+            builder.Property(u => u.status).HasColumnName("user_status").IsRequired().HasMaxLength(10).HasDefaultValue("Offline").IsUnicode(true);
 
             // Add unique constraints
-            builder.HasIndex(u => u.Username).IsUnique();
-            builder.HasIndex(u => u.Email).IsUnique();
-            builder.HasIndex(u => u.Nic).IsUnique();
-            builder.HasIndex(u => u.Phonenumber).IsUnique();
+            builder.HasIndex(u => u.username).IsUnique();
+            builder.HasIndex(u => u.email).IsUnique();
+            builder.HasIndex(u => u.nic).IsUnique();
+            builder.HasIndex(u => u.phone_number).IsUnique();
 
             // Configuring relationships
             //builder.HasMany(u => u.SentMessages)

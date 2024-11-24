@@ -24,104 +24,104 @@ namespace FYP.Migrations
 
             modelBuilder.Entity("FYP.Models.User", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("user_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("User_Id");
+                        .HasColumnName("user_id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("user_id"), 1L, 1);
 
-                    b.Property<string>("Address")
+                    b.Property<string>("address")
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(255)")
-                        .HasColumnName("User_Address");
+                        .HasColumnName("user_address");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<DateTime>("created_at")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2")
-                        .HasColumnName("User_CreatedAt")
+                        .HasColumnName("user_created_at")
                         .HasDefaultValueSql("GETDATE()");
 
-                    b.Property<DateTime?>("DeletedAt")
+                    b.Property<DateTime?>("deleted_at")
                         .HasColumnType("datetime2")
-                        .HasColumnName("User_DeletedAt");
+                        .HasColumnName("user_deleted_at");
 
-                    b.Property<string>("Email")
+                    b.Property<string>("email")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(100)")
-                        .HasColumnName("User_Email");
+                        .HasColumnName("user_email");
 
-                    b.Property<string>("Nic")
+                    b.Property<string>("nic")
                         .IsRequired()
                         .HasMaxLength(13)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(13)")
-                        .HasColumnName("User.NIC");
+                        .HasColumnName("user_nic");
 
-                    b.Property<string>("PasswordHash")
+                    b.Property<string>("password")
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
                         .HasColumnType("varchar(255)")
-                        .HasColumnName("User_Password");
+                        .HasColumnName("user_password");
 
-                    b.Property<string>("Phonenumber")
+                    b.Property<string>("phone_number")
                         .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(20)")
-                        .HasColumnName("User_PhoneNumber");
+                        .HasColumnName("user_phone_number");
 
-                    b.Property<string>("Role")
+                    b.Property<string>("role")
                         .IsRequired()
                         .HasMaxLength(20)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(20)")
-                        .HasColumnName("User.Role");
+                        .HasColumnName("user_role");
 
-                    b.Property<string>("Salt")
+                    b.Property<string>("salt")
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
                         .HasColumnType("varchar(255)")
-                        .HasColumnName("User.Salt");
+                        .HasColumnName("user_salt");
 
-                    b.Property<string>("Status")
+                    b.Property<string>("status")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(10)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(10)")
                         .HasDefaultValue("Offline")
-                        .HasColumnName("User_Status");
+                        .HasColumnName("user_status");
 
-                    b.Property<DateTime?>("UpdatedAt")
+                    b.Property<DateTime?>("updated_at")
                         .HasColumnType("datetime2")
-                        .HasColumnName("User_UpdatedAt");
+                        .HasColumnName("user_updated_at");
 
-                    b.Property<string>("Username")
+                    b.Property<string>("username")
                         .IsRequired()
                         .HasMaxLength(50)
                         .IsUnicode(true)
                         .HasColumnType("nvarchar(50)")
-                        .HasColumnName("User_name");
+                        .HasColumnName("user_name");
 
-                    b.HasKey("Id");
+                    b.HasKey("user_id");
 
-                    b.HasIndex("Email")
+                    b.HasIndex("email")
                         .IsUnique();
 
-                    b.HasIndex("Nic")
+                    b.HasIndex("nic")
                         .IsUnique();
 
-                    b.HasIndex("Phonenumber")
+                    b.HasIndex("phone_number")
                         .IsUnique();
 
-                    b.HasIndex("Username")
+                    b.HasIndex("username")
                         .IsUnique();
 
                     b.ToTable("Users", (string)null);

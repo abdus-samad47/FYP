@@ -2,7 +2,7 @@
 {
     public class VerifyUser
     {
-        public string Username { get; set; }
-        public string PasswordHash { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

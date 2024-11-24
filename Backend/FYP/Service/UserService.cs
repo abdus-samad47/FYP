@@ -40,25 +40,25 @@ namespace FYP.Service
         {
 
             var salt = Hashing.Salt();
-            var password = createUserDTO.PasswordHash;
+            var password = createUserDTO.password;
             var hashingPassword = Hashing.hashPassword(password, salt);
-            createUserDTO.PasswordHash = hashingPassword;
+            createUserDTO.password = hashingPassword;
             var user = _mapper.Map<User>(createUserDTO);
-            user.Salt = salt;
+            user.salt = salt;
 
             await _userRepository.AddUserAsync(user);
         }
         public async Task<bool> ValidateUserAsync(LoginUserDTO loginDTO)
         {
             // Check if user exists
-            var user = await _userRepository.GetByEmailAsync(loginDTO.Email);
+            var user = await _userRepository.GetByEmailAsync(loginDTO.email);
             if (user == null)
             {
                 return false;
             }
 
             // Verify password
-            return Hashing.VerifyPassword(loginDTO.Password, user.PasswordHash, user.Salt);
+            return Hashing.VerifyPassword(loginDTO.password, user.password, user.salt);
         }
     }
 }

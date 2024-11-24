@@ -29,12 +29,12 @@ namespace FYP.Repository
         }
         public async Task<bool> IsEmailExistsAsync(string email)
         {
-            return await _context.Users.AnyAsync(u => u.Email == email);
+            return await _context.Users.AnyAsync(u => u.email == email);
         }
 
         public async Task<bool> IsNICExistsAsync(string nic)
         {
-            return await _context.Users.AnyAsync(u => u.Nic == nic);
+            return await _context.Users.AnyAsync(u => u.nic == nic);
         }
 
         public async Task AddUserAsync(User user)
@@ -45,7 +45,7 @@ namespace FYP.Repository
         }
         public async Task<User> GetByEmailAsync(string email)
         {
-            return await _context.Users.SingleOrDefaultAsync(u => u.Email == email);
+            return await _context.Users.SingleOrDefaultAsync(u => u.email == email);
         }
     }
 }

@@ -52,13 +52,13 @@ namespace FYP.Controllers
                 }
 
                 // Validate email
-                if (await _userService.IsEmailExistsAsync(createUserDTO.Email))
+                if (await _userService.IsEmailExistsAsync(createUserDTO.email))
                 {
                     return Conflict(new { message = "A user with the same email already exists." });
                 }
 
                 // Validate NIC
-                if (await _userService.IsNICExistsAsync(createUserDTO.Nic))
+                if (await _userService.IsNICExistsAsync(createUserDTO.nic))
                 {
                     return Conflict(new { message = "A user with the same NIC already exists." });
                 }

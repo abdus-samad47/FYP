@@ -2,12 +2,12 @@
 {
     public class UserDTO
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string Phonenumber { get; set; }
-        public string Status { get; set; }
-        public string Salt { get; set; }
-        public string PasswordHash { get; set; }
+        public int user_id { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
+        public string phone_number { get; set; }
+        public string status { get; set; }
+        public string salt { get; set; }
+        public string password { get; set; }
     }
 }

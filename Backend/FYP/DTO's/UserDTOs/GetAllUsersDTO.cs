@@ -2,18 +2,18 @@
 {
     public class GetAllUsersDTO
     {
-        public int Id { get; set; }
-        public string Username { get; set; }
-        public string Email { get; set; }
-        public string PasswordHash { get; set; }
-        public string Salt { get; set; }
-        public string Role { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public DateTime DeletedAt { get; set; }
-        public string Nic { get; set; }
-        public string Phonenumber { get; set; }
-        public string Address { get; set; }
-        public string Status { get; set; }
+        public int user_id { get; set; }
+        public string username { get; set; }
+        public string email { get; set; }
+        public string password { get; set; }
+        public string salt { get; set; }
+        public string role { get; set; }
+        public DateTime created_at { get; set; }
+        public DateTime updated_at { get; set; }
+        public DateTime deleted_at { get; set; }
+        public string nic { get; set; }
+        public string phone_number { get; set; }
+        public string address { get; set; }
+        public string status { get; set; }
     }
 }
