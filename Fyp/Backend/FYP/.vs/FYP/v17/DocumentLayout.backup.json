@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FYP\\Backend\\FYP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|d:\\fyp\\backend\\fyp\\models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|solutionrelative:models\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|d:\\fyp\\backend\\fyp\\migrations\\20241121073111_add_user_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|solutionrelative:migrations\\20241121073111_add_user_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|d:\\fyp\\backend\\fyp\\builder\\userbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|solutionrelative:builder\\userbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|d:\\fyp\\backend\\fyp\\builder\\categoriesbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2106B148-EF0C-424A-9F23-CB2FE9C29849}|FYP.csproj|solutionrelative:builder\\categoriesbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241121073111_add_user_table.cs",
+              "DocumentMoniker": "D:\\FYP\\Backend\\FYP\\Migrations\\20241121073111_add_user_table.cs",
+              "RelativeDocumentMoniker": "Migrations\\20241121073111_add_user_table.cs",
+              "ToolTip": "D:\\FYP\\Backend\\FYP\\Migrations\\20241121073111_add_user_table.cs",
+              "RelativeToolTip": "Migrations\\20241121073111_add_user_table.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T07:31:11.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Categories.cs",
+              "DocumentMoniker": "D:\\FYP\\Backend\\FYP\\Models\\Categories.cs",
+              "RelativeDocumentMoniker": "Models\\Categories.cs",
+              "ToolTip": "D:\\FYP\\Backend\\FYP\\Models\\Categories.cs",
+              "RelativeToolTip": "Models\\Categories.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T07:07:27.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserBuilder.cs",
+              "DocumentMoniker": "D:\\FYP\\Backend\\FYP\\Builder\\UserBuilder.cs",
+              "RelativeDocumentMoniker": "Builder\\UserBuilder.cs",
+              "ToolTip": "D:\\FYP\\Backend\\FYP\\Builder\\UserBuilder.cs",
+              "RelativeToolTip": "Builder\\UserBuilder.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T07:04:42.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriesBuilder.cs",
+              "DocumentMoniker": "D:\\FYP\\Backend\\FYP\\Builder\\CategoriesBuilder.cs",
+              "RelativeDocumentMoniker": "Builder\\CategoriesBuilder.cs",
+              "ToolTip": "D:\\FYP\\Backend\\FYP\\Builder\\CategoriesBuilder.cs",
+              "RelativeToolTip": "Builder\\CategoriesBuilder.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwBEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T07:04:06.426Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
